@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+:root{
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    letter-spacing: 1px;
+}
+
+body{
+    /* background: url("img/Sobre.jpg");
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-size:cover; */
+    /* overflow:hidden; */
+    background-color: #fff;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.historia h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.historia p{
+    color: black;
+}
+
+.heading h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.heading p{
+    text-align: left;
+}
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.rev-img{
+    width: 70px;
+    height: 70px;
+}
+
+.rev-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    /* border: 2px solid orange; */
+}
+
+.reviews-container .box{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.reviews-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.reviews-container .box p{
+    font-style: italic;
+}
+
+.reviews-container .box .stars .bx{
+    color: orange;
+}
+
+.reviews-container .box a{
+    color:	darkorange;
+    text-decoration: none;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer_link{
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-content{
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+.footer_contents h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer_link i{
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer_link:hover{
+    opacity: 0.8;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+    background-color: #4267b3;
+}
+
+#whatsapp{
+    background-color: #25d366;
+}
+
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer_list .footer_link{
+    color: var(--color-neutral-30);
+}
+
+.footer_list .footer_link:hover{
+    color: #ff9807;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: var(--color-neutral-30);
+}
+
+#input_goup{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_goup input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_goup button{
+    background-color: #00008B;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_goup button:hover{
+    opacity: 0.8;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+/* fim */
+
+@media screen and (max-width: 768px){
+    #footer_contents{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #footer_contents{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem 2rem;
+    }
+}
