@@ -9,7 +9,8 @@
 body{
     background: url("img/Tempo/Manhã.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    background-position: center;
     overflow:hidden;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
