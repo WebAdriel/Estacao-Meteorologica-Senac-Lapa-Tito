@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Clima.css">
+    <title>WEATHER APP</title>
+</head>
+<body>
+    <div class="header">
+        <h1>WEATHER APP</h1>
+        <div>
+            <input type="text" id="input" placeholder="Enter city name...">
+            <button id="search">Search</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="weather">
+            <h2 id="city">Delhi, IN</h2>
+            <div class="temp-box">
+                <img src="../img/senac.icon.png" alt="" id="img">
+                <p class="temperature">26 °C</p>
+            </div>
+            <span id="clouds">Broken Clouds</span>
+        </div>
+
+        <div class="divider1"></div>
+
+        <div class="forecastH">
+            <p class="cast-header">Upcoming forecast</p>
+            <div class="templist">
+                <div class="next">
+                    <div>
+                        <p class="time">11:35 PM</p>
+                        <p>29 °C / 25 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/Tempo.js"></script>
+</body>
+</html>
