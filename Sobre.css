@@ -16,18 +16,18 @@
 }
 
 body{
-    /* background: url("img/Sobre.jpg");
-    background-repeat: repeat-x;
-    background-repeat: no-repeat;
-    background-size:cover; */
-    /* overflow:hidden; */
+    overflow:hidden;
     background-color: #C0C0C0;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
 }
 
 /* Inicio */
+.card {
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
 .card-image {
     position: relative;
     height: 90px;
